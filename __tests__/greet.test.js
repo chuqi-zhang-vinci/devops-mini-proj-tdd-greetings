@@ -23,6 +23,10 @@ test("'     ' equals Hello, my friend.", () => {
     expect(greet('     ')).toBe('Hello, my friend.')
 })
 
-test("JERRY equals HELLO, JERRY!", () => {
-    expect(greet('JERRY')).toBe('HELLO, JERRY!');
+test('JERRY equals HELLO, JERRY!', () => {
+    expect(greet('JERRY')).toBe('HELLO, JERRY!')
+})
+
+test("['Kratos', 'Thanathos'] equals Hello, Kratos and Thanathos", () => {
+    expect(greet(['Kratos','Thanathos'])).toBe('Hello, Kratos and Thanathos')
 })
