@@ -12,15 +12,9 @@ function greet (name) {
 }
 
 function greetWithArray (names) {
-  let finalDisplay = 'Hello'
-  for (const name of names) {
-    if (name === names[names.length - 1]) {
-      finalDisplay += ` and ${name}.`
-    } else {
-      finalDisplay += `, ${name}`
-    }
-  }
-  return finalDisplay
+  const allButLast = names.slice(0, -1).join(', ')
+  const last = names[names.length - 1]
+  return `Hello, ${allButLast} and ${last}.`
 }
 
 module.exports = greet
