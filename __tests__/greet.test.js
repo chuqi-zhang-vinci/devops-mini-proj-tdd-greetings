@@ -25,5 +25,11 @@ test('JERRY equals HELLO, JERRY!', () => {
 })
 
 test("['Kratos', 'Thanathos'] equals Hello, Kratos and Thanathos.", () => {
-    expect(greet(['Kratos','Thanathos'])).toBe('Hello, Kratos and Thanathos.')
+    expect(greet(['Kratos', 'Thanathos'])).toBe('Hello, Kratos and Thanathos.')
+})
+
+test('[“Kratos”, “Thanathos”, “Hypnos”] equals Hello, Kratos, Thanathos and Hypnos.', () => {
+    expect(greet(['Kratos', 'Thanathos', 'Hypnos'])).toBe(
+        'Hello, Kratos, Thanathos and Hypnos.'
+    )
 })
