@@ -19,3 +19,7 @@ test('undefined equals Hello, my friend.', () => {
 test("'     ' equals Hello, my friend.", () => {
     expect(greet('     ')).toBe('Hello, my friend.')
 })
+
+test("JERRY equals HELLO, JERRY!", () => {
+    expect(greet('JERRY')).toBe('HELLO, JERRY!')
+})
