@@ -1,5 +1,5 @@
 function greet (name) {
-  if (name === '' || name === null || name === undefined) return 'Hello, my friend.'
+  if (name === null || name === undefined || name.trim() === '') { return 'Hello, my friend.' }
   return 'Hello, ' + name + '.'
 }
 
