@@ -35,3 +35,19 @@ test('[“Kratos”, “Thanathos”, “Hypnos”] equals Hello, Kratos, Thanat
 test('[“KRATOS”, “Thanathos”, “Hypnos”] equals Hello, Thanathos and Hypnos. AND HELLO KRATOS!', () => {
     expect(greet(['KRATOS', 'Thanathos', 'Hypnos'])).toBe('Hello, Thanathos and Hypnos. AND HELLO KRATOS!')
 })
+
+test('["Amy", "BRIAN", "Charlotte"] equals Hello, Amy and Charlotte. AND HELLO BRIAN!', () => {
+    expect(greet(["Amy", "BRIAN", "Charlotte"])).toBe('Hello, Amy and Charlotte. AND HELLO BRIAN!')
+})
+
+test('["Amy", "BRIAN", "Charlotte", "FR"] equals Bonjour, Amy et Charlotte. ET BONJOUR BRIAN!', () => {
+    expect(greet(["Amy", "BRIAN", "Charlotte", "FR"])).toBe('Bonjour, Amy et Charlotte. ET BONJOUR BRIAN!')
+})
+
+test('["Amy", "BRIAN", "Charlotte", "nl"] equals Goeiedag, Amy en Charlotte. EN GOEIEDAG BRIAN!', () => {
+    expect(greet(["Amy", "BRIAN", "Charlotte", "nl"])).toBe('Goeiedag, Amy en Charlotte. EN GOEIEDAG BRIAN!')
+})
+
+test('["Amy", "BRIAN", "Charlotte", "En"] equals Hello, Amy and Charlotte. AND HELLO BRIAN!', () => {
+    expect(greet(["Amy", "BRIAN", "Charlotte", "En"])).toBe('Hello, Amy and Charlotte. AND HELLO BRIAN!')
+})
