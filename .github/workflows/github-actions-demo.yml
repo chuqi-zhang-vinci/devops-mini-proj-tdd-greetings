@@ -1,0 +1,21 @@
+name: Pipeline projet 🚀
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 
+      - run: npm i
+      - run: echo "le pipeline a commencé à $(date)"
+      - name: prettier && eslint
+        run: npm run code:fix
+      - run: npm run test
+      - run: npm run build
+      - run: echo "le pipeline s'est terminé à $(date)"
+      - run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
+

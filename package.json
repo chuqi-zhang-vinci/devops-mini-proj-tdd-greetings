@@ -8,7 +8,8 @@
         "test:watch": "jest --watchAll",
         "code:fix": "prettier --write . && eslint --fix .",
         "commit": "cz",
-        "prettier": "prettier --check ."
+        "prettier": "prettier --check .",
+        "build": "webpack ./src/app.js -o public/"
     },
     "repository": {
         "type": "git",
