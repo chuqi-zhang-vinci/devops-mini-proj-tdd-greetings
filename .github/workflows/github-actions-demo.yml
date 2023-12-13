@@ -7,6 +7,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses : 
       - run: npm i
       - run: echo "le pipeline a commencé à $(date)"
       - name: prettier && eslint
