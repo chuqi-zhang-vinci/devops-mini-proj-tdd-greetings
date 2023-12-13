@@ -1,9 +1,9 @@
 # devops-mini-proj-tdd-greetings
 
 groupe 27
-Mona Naït mazi
-Karim Naviaux
-Chuqi Zhang
+Mona Naït mazi<br>
+Karim Naviaux<br>
+Chuqi Zhang<br>
 
 
 ## Questions
