@@ -31,7 +31,8 @@ Dans notre pipeline on a runs-on: ubuntu-latest qui dit bien que la machine virt
 - Quelle est la différence entre “use” et “run”. Expliquez par rapport à votre pipeline. 
 ```bash
 comme dit plus tôt, run est suivi d'une commande à exécuter. Par contre, use est suivi d'une action qui sert de prérequis pour en effectuer une autre qui sera spécifiée après. 
-Par exemple dans notre pipeline, on a uses: actions/checkout@v4, pour le que checkout se fasse à chaque action. 
+Par exemple dans notre pipeline, on a uses: actions/checkout@v4, pour le que checkout se fasse à chaque action. Cela permet de réutiliser des morceaux de notre fichier YAML
+
 ```
 - Peut-on intervertir différentes étapes dans votre pipeline ? Que votre réponse soit oui ou non, expliquez par rapport à votre pipeline. 
 ```bash
