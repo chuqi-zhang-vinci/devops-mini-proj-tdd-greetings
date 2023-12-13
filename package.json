@@ -4,7 +4,7 @@
     "description": "Mona Naït mazi\r Karim Naviaux\r Chuqi Zhang",
     "main": "index.js",
     "scripts": {
-        "test": "jest --coverage",
+        "test": "jest",
         "test:watch": "jest --watchAll",
         "code:fix": "prettier --write . && eslint --fix .",
         "commit": "cz",
