@@ -9,7 +9,7 @@
         "code:fix": "prettier --write . && eslint --fix .",
         "commit": "cz",
         "prettier": "prettier --check .",
-        "build": "webpack ./src/app.js -o public/"
+        "build": "webpack ./utils/greet.js -o public/"
     },
     "repository": {
         "type": "git",
