@@ -25,11 +25,13 @@ On conseillerai le 'on pull request' à un groupe de développeur junior car cel
 ```
 - Quelle est la différence entre run et run_on ?  Expliquez par rapport à votre pipeline.  
 ```bash
-<votre réponse ici>
+run est suivi de la commande ou des étapes qui doivent être exécutées, tandis que run on est suivi de l'environnement sur lequel le job va s'exécuter. Le run_on spécifie l'infrastructure sur laquelle les commandes précédes d'un run vont tourner. 
+Dans notre pipeline on a runs-on: ubuntu-latest qui dit bien que la machine virtuelle sur laquelle nos commandes vont tourner tourne sous la dernière version de Ubuntu, et on a plusieurs commandes précédées de run
 ```
 - Quelle est la différence entre “use” et “run”. Expliquez par rapport à votre pipeline. 
 ```bash
-<votre réponse ici>
+comme dit plus tôt, run est suivi d'une commande à exécuter. Par contre, use est suivi d'une action qui sert de prérequis pour en effectuer une autre qui sera spécifiée après. 
+Par exemple dans notre pipeline, on a uses: actions/checkout@v4, pour le que checkout se fasse à chaque action. Cela permet de réutiliser des morceaux de notre fichier YAML
 ```
 - Peut-on intervertir différentes étapes dans votre pipeline ? Que votre réponse soit oui ou non, expliquez par rapport à votre pipeline. 
 ```bash
