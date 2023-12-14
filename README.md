@@ -1,6 +1,8 @@
 # devops-mini-proj-tdd-greetings
 
-groupe 27
+lien du repository : https://github.com/chuqi-zhang-vinci/devops-mini-proj-tdd-greetings
+
+groupe 27 <br>
 Mona Naït mazi<br>
 Karim Naviaux<br>
 Chuqi Zhang<br>
