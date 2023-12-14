@@ -38,9 +38,14 @@ Par exemple dans notre pipeline, on a uses: actions/checkout@v4, pour le que che
 ```
 - Peut-on intervertir différentes étapes dans votre pipeline ? Que votre réponse soit oui ou non, expliquez par rapport à votre pipeline. 
 ```bash
-<votre réponse ici>
+Oui, on peut les intervertir mais cela depend des dependance
 ```
 - Je veux ajouter un test de sécurité sur mon pipeline en exécutant le programme secure_app. Que devrais-je faire ?  Quelles questions devriez-vous vous poser ? 
 ```bash
-<votre réponse ici>
+Pour ajouter le programme secure_app dans notre pipeline, il faudra d'abord configurer notre pipeline pour inclure l'étape qui fera executer le programme. Il faudra verifier s'il est bien intégré pour qu'il puisse être appellé correctement.
+
+les questions qu'on devrait se poser sont : 
+    - Est ce que le programme est compatible avec notre pipeline ?
+    - Quelles sont les implications en cas d'echecs du programme secure_app sur notre pipeline ?
+
 ```
