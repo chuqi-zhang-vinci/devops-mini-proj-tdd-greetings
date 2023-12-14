@@ -1,6 +1,8 @@
 # devops-mini-proj-tdd-greetings
 
-groupe 27
+lien du repository : https://github.com/chuqi-zhang-vinci/devops-mini-proj-tdd-greetings
+
+groupe 27 <br>
 Mona Naït mazi<br>
 Karim Naviaux<br>
 Chuqi Zhang<br>
@@ -32,12 +34,18 @@ Dans notre pipeline on a runs-on: ubuntu-latest qui dit bien que la machine virt
 ```bash
 comme dit plus tôt, run est suivi d'une commande à exécuter. Par contre, use est suivi d'une action qui sert de prérequis pour en effectuer une autre qui sera spécifiée après. 
 Par exemple dans notre pipeline, on a uses: actions/checkout@v4, pour le que checkout se fasse à chaque action. Cela permet de réutiliser des morceaux de notre fichier YAML
+
 ```
 - Peut-on intervertir différentes étapes dans votre pipeline ? Que votre réponse soit oui ou non, expliquez par rapport à votre pipeline. 
 ```bash
-<votre réponse ici>
+Oui, on peut les intervertir mais cela depend des dependance
 ```
 - Je veux ajouter un test de sécurité sur mon pipeline en exécutant le programme secure_app. Que devrais-je faire ?  Quelles questions devriez-vous vous poser ? 
 ```bash
-<votre réponse ici>
+Pour ajouter le programme secure_app dans notre pipeline, il faudra d'abord configurer notre pipeline pour inclure l'étape qui fera executer le programme. Il faudra verifier s'il est bien intégré pour qu'il puisse être appellé correctement.
+
+Les questions qu'on devrait se poser sont : 
+    - Est ce que le programme est compatible avec notre pipeline ?
+    - Quelles sont les implications en cas d'echecs du programme secure_app sur notre pipeline ?
+
 ```
