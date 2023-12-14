@@ -44,7 +44,7 @@ Oui, on peut les intervertir mais cela depend des dependance
 ```bash
 Pour ajouter le programme secure_app dans notre pipeline, il faudra d'abord configurer notre pipeline pour inclure l'étape qui fera executer le programme. Il faudra verifier s'il est bien intégré pour qu'il puisse être appellé correctement.
 
-les questions qu'on devrait se poser sont : 
+Les questions qu'on devrait se poser sont : 
     - Est ce que le programme est compatible avec notre pipeline ?
     - Quelles sont les implications en cas d'echecs du programme secure_app sur notre pipeline ?
 
